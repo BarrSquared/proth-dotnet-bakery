@@ -81,6 +81,24 @@ namespace DotnetBakery.Controllers
     }
 }
 
+/**
+
+
+PetsController.cs
+line 30 to 45
+.Include and .OrderBy is joining our tables
+
+line 47 public void Post([FromBody] Pet pet)
+
+
+line 64: make sure {} are only around id
+line 65 httpPut, passing in an id and pet object 'Pet pet'
+67: setting pet.id to the int we're pulling in
+68: setting checkedInAt to to DateTime.now
+69: setting the null value to DateTime.now's value, which is current datetime
+
+ */
+
 
 //public static bool FindInArray(object[] a, object x)
 
@@ -113,3 +131,5 @@ class BreadController extends ControllerBase {
 
 let myController = new BreadController(stuff, and, things);
 */
+
+

@@ -36,3 +36,10 @@ namespace DotnetBakery.Models
         public BreadType type {get; set;}
     }
 }
+
+/**
+
+for pet hotel, Pets.cs line 45, 
+public DateTime? checkedInAt {get; set;}
+
+ */
