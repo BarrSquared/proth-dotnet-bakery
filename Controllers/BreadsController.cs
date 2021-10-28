@@ -65,9 +65,13 @@ namespace DotnetBakery.Controllers
         }
 
         [HttpDelete("{id}")]
+    //  declaring public function, void as in not expecting a return value
+    //          calling Delete function, passing in id
         public void Delete(int id) {
             // Finding the bread by id, which we want to delete
+            // Uppercase B Bread is model, lower case next is declaring a var with that type
             Bread bread = _context.Breads.SingleOrDefault(bread => bread.id == id); 
+            //            pool.query returning a bread object by id that we input.
 
             // Remove that bread
             _context.Breads.Remove(bread);
