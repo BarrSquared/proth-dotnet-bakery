@@ -13,3 +13,7 @@ namespace DotnetBakery.Models
         public string name {get; set;}
     }
 }
+
+// {get; set;} 
+// get; returns value of a variable
+// set; assigns value to the variable
