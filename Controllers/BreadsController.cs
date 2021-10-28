@@ -12,7 +12,8 @@ namespace DotnetBakery.Controllers
 {
     [ApiController]
     [Route("api/[controller]")] // localhost:5000/api/breads
-    public class BreadsController : ControllerBase
+    public class BreadsController : ControllerBase 
+    //             ^ this word defining the Breads part of api
     {
         private readonly ApplicationContext _context;
         public BreadsController(ApplicationContext context) {
